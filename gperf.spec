@@ -1,11 +1,11 @@
 Summary:	A perfect hash function generator
 Name:	 	gperf
-Version:	3.0.2
+Version:	3.0.3
 Release:	%mkrel 1
 License:	GPL
 URL:		http://www.gnu.org/software/gperf/
-Source:		ftp://ftp.gnu.org/gnu/gperf/%{name}-%{version}.tar.bz2
-Patch0:		%{name}-3.0.1-gcc401.patch.bz2
+Source:		ftp://ftp.gnu.org/gnu/gperf/%{name}-%{version}.tar.gz
+Patch0:		gperf-3.0.1-gcc401.patch.bz2
 Group:		Development/Other
 Prereq:		/sbin/install-info
 BuildRoot:	%{_tmppath}/%{name}-root

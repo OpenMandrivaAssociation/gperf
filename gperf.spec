@@ -30,7 +30,7 @@ functions.
 %install
 rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
-rm -f $RPM_BUILD_ROOT%{_datadir}/doc/gperf/gperf.html
+rm -f $RPM_BUILD_ROOT%{_datadir}/doc/gperf.html
 
 %clean
 rm -rf $RPM_BUILD_ROOT

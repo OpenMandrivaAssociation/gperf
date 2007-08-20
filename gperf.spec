@@ -7,7 +7,8 @@ URL:		http://www.gnu.org/software/gperf/
 Source:		ftp://ftp.gnu.org/gnu/gperf/%{name}-%{version}.tar.gz
 Patch0:		gperf-3.0.1-gcc401.patch.bz2
 Group:		Development/Other
-Prereq:		/sbin/install-info
+Requires(post):		info-install
+Requires(preun):		info-install
 BuildRoot:	%{_tmppath}/%{name}-root
 
 %description

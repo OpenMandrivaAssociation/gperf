@@ -1,7 +1,7 @@
 Summary:	A perfect hash function generator
 Name:	 	gperf
 Version:	3.0.3
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPL
 URL:		http://www.gnu.org/software/gperf/
 Source:		ftp://ftp.gnu.org/gnu/gperf/%{name}-%{version}.tar.gz

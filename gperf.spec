@@ -9,6 +9,7 @@ Patch0:		gperf-3.0.1-gcc401.patch.bz2
 Group:		Development/Other
 Requires(post):		info-install
 Requires(preun):		info-install
+BuildRoot:	%{_tmppath}/%{name}-root
 
 %description
 Gperf is a perfect hash function generator written in C++.  Simply

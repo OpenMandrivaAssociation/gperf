@@ -1,14 +1,14 @@
 Summary:	A perfect hash function generator
 Name:	 	gperf
-Version:	3.0.3
-Release:	%mkrel 5
-License:	GPL
+Version:	3.0.4
+Release:	%mkrel 1
+License:	GPLv3+
 URL:		http://www.gnu.org/software/gperf/
 Source:		ftp://ftp.gnu.org/gnu/gperf/%{name}-%{version}.tar.gz
 Patch0:		gperf-3.0.1-gcc401.patch.bz2
 Group:		Development/Other
 Requires(post):		info-install
-Requires(preun):		info-install
+Requires(preun):	info-install
 BuildRoot:	%{_tmppath}/%{name}-root
 
 %description
@@ -29,12 +29,12 @@ functions.
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
-rm -f $RPM_BUILD_ROOT%{_datadir}/doc/gperf.html
+rm -f %{buildroot}%{_datadir}/doc/gperf.html
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %post
 %_install_info %{name}.info

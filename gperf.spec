@@ -1,15 +1,12 @@
 Summary:	A perfect hash function generator
 Name:	 	gperf
 Version:	3.0.4
-Release:	%mkrel 3
+Release:	4
 License:	GPLv3+
 URL:		http://www.gnu.org/software/gperf/
 Source:		ftp://ftp.gnu.org/gnu/gperf/%{name}-%{version}.tar.gz
 Patch0:		gperf-3.0.1-gcc401.patch.bz2
 Group:		Development/Other
-Requires(post):		info-install
-Requires(preun):	info-install
-BuildRoot:	%{_tmppath}/%{name}-root
 
 %description
 Gperf is a perfect hash function generator written in C++.  Simply
@@ -33,17 +30,7 @@ rm -rf %{buildroot}
 %makeinstall_std
 rm -f %{buildroot}%{_datadir}/doc/gperf.html
 
-%clean
-rm -rf %{buildroot}
-
-%post
-%_install_info %{name}.info
-
-%preun
-%_remove_install_info %{name}.info
-
 %files
-%defattr(-,root,root)
 %doc README NEWS doc/gperf.html
 %{_bindir}/gperf
 %{_mandir}/man1/gperf.1*

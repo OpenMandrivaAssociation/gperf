@@ -6,7 +6,6 @@ License:	GPLv3+
 Group:		Development/Other
 Url:		http://www.gnu.org/software/gperf/
 Source0:	ftp://ftp.gnu.org/gnu/gperf/%{name}-%{version}.tar.gz
-Patch0:		gperf-3.0.1-gcc401.patch.bz2
 
 %description
 Gperf is a perfect hash function generator written in C++.  Simply

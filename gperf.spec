@@ -1,7 +1,7 @@
 Summary:	A perfect hash function generator
 Name:	 	gperf
-Version:	3.0.4
-Release:	12
+Version:	3.1
+Release:	1
 License:	GPLv3+
 Group:		Development/Other
 Url:		http://www.gnu.org/software/gperf/
@@ -22,7 +22,7 @@ functions.
 %apply_patches
 
 %build
-%configure2_5x
+%configure
 %make
 
 %install

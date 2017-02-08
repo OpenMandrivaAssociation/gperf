@@ -1,3 +1,2 @@
 sources:
-  "gperf-3.0.1-gcc401.patch.bz2": f0d9fe47f04df5a05be785789f7673f63c63b1f5
-  "gperf-3.0.4.tar.gz": e32d4aff8f0c730c9a56554377b2c6d82d0951b8
+  gperf-3.1.tar.gz: e3c0618c2d2e5586eda9498c867d5e4858a3b0e2

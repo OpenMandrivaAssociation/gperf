@@ -1,7 +1,7 @@
 Summary:	A perfect hash function generator
 Name:	 	gperf
 Version:	3.1
-Release:	2
+Release:	3
 License:	GPLv3+
 Group:		Development/Other
 Url:		http://www.gnu.org/software/gperf/
@@ -17,15 +17,14 @@ Install gperf if you need a program that generates perfect hash
 functions.
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 rm -f %{buildroot}%{_datadir}/doc/gperf.html
 
 %files

@@ -4,7 +4,7 @@ Version:	3.1
 Release:	4
 License:	GPLv3+
 Group:		Development/Other
-Url:		http://www.gnu.org/software/gperf/
+Url:		https://www.gnu.org/software/gperf/
 Source0:	ftp://ftp.gnu.org/gnu/gperf/%{name}-%{version}.tar.gz
 
 %description

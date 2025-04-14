@@ -1,6 +1,6 @@
 Summary:	A perfect hash function generator
 Name:	 	gperf
-Version:	3.2
+Version:	3.2.1
 Release:	1
 License:	GPLv3+
 Group:		Development/Other

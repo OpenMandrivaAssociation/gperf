@@ -7,6 +7,11 @@ Group:		Development/Other
 Url:		https://www.gnu.org/software/gperf/
 Source0:	ftp://ftp.gnu.org/gnu/gperf/%{name}-%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 Gperf is a perfect hash function generator written in C++.  Simply
 stated, a perfect hash function is a hash function and a data
